@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Cache/etc/cache.xsd">
+    <type name="rdstation_token" translate="label,description" instance="Omv\RDStation\Model\Cache\Token">
+        <label>RDStation Token</label>
+        <description>Stores Authentication token from RDStation</description>
+    </type>
+</config>

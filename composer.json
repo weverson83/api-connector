@@ -1,0 +1,21 @@
+{
+  "name": "omv/rd-station",
+  "version": "1.0.0",
+  "description": "Integration with RDStation",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "ext-http": "*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Omv\\RDStation\\": ""
+    }
+  }
+}

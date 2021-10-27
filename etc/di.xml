@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Omv\RDStation\Spi\Service\Authentication">
+        <plugin name="getTokenFromCache"
+                type="Omv\RDStation\Plugin\Authentication\GetTokenFromCache"/>
+    </type>
+    <preference for="Omv\RDStation\Api\Data\EventPayloadInterface" type="Omv\RDStation\Model\Data\EventPayload"/>
+    <preference for="Omv\RDStation\Api\Data\EventInterface" type="Omv\RDStation\Model\Data\Event"/>
+    <preference for="Omv\RDStation\Api\Data\EventResponseInterface" type="Omv\RDStation\Model\Data\EventResponse"/>
+    <preference for="Omv\RDStation\Api\Data\ContactInterface" type="Omv\RDStation\Model\Data\Contact"/>
+    <preference for="Omv\RDStation\Spi\Data\TokenResponseInterface" type="Omv\RDStation\Spi\Data\TokenResponse"/>
+    <preference for="Omv\RDStation\Spi\Data\ErrorInterface" type="Omv\RDStation\Spi\Data\Error"/>
+    <preference for="Omv\RDStation\Spi\Data\ErrorResponseInterface" type="Omv\RDStation\Spi\Data\ErrorResponse"/>
+    <preference for="Omv\RDStation\Spi\Data\TokenRequestInterface" type="Omv\RDStation\Spi\Data\TokenRequest"/>
+    <preference for="Omv\RDStation\Spi\Data\Error\ValidationRuleInterface"
+                type="Omv\RDStation\Spi\Data\Error\ValidationRule"/>
+    <preference for="Omv\RDStation\Spi\Data\Legacy\FormIntegrationsInterface"
+                type="Omv\RDStation\Spi\Data\Legacy\FormIntegrations"/>
+</config>
